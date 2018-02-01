@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.17.1226.1925                               -->
+<workbook original-version='10.5' source-build='10.5.0 (10500.17.1226.1925)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='sim_results' inline='true' name='federated.0d12dhg06zpvlo162u8yh1esrt0n' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sim_results' name='textscan.0psm8fm0ckxrvl1es0s3r0uoyv8g'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:\Users\ikke_\Documents\Algemeen\Sollicitaties\2017.01.29 Transmetrics\swine-escape\sim_results.csv' dataRefreshTime='' directory='C:/Users/ikke_/Documents/Algemeen/Sollicitaties/2017.01.29 Transmetrics/swine-escape' filename='C:/Users/ikke_/AppData/Local/Temp/TableauTemp/0met50a07m8dpn176flx70qtq4b0/sim_results.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0psm8fm0ckxrvl1es0s3r0uoyv8g' name='sim_results.csv' table='[sim_results#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:A211:no:A1:A211:0' header='yes' locale='nl_NL'>
+            <column datatype='string' name=',board_size,swine_start,butcher_start,winner,turns' ordinal='0' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>,board_size,swine_start,butcher_start,winner,turns</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[,board_size,swine_start,butcher_start,winner,turns]</local-name>
+            <parent-name>[sim_results.csv]</parent-name>
+            <remote-alias>,board_size,swine_start,butcher_start,winner,turns</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LNL_RNL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sim_results.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:A211:no:A1:A211:0&quot;</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Netherlands&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+    <datasource caption='sim_results (2)' inline='true' name='federated.1pvb6o80f92uzk13axt2f1xdoknv' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sim_results' name='textscan.149sro41mkrh7r16jyl89015bnyp'>
+            <connection class='textscan' directory='C:/Users/ikke_/Documents/Algemeen/Sollicitaties/2017.01.29 Transmetrics/swine-escape' filename='sim_results.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.149sro41mkrh7r16jyl89015bnyp' name='sim_results.csv' table='[sim_results#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='board_size' ordinal='1' />
+            <column datatype='integer' name='swine_start' ordinal='2' />
+            <column datatype='integer' name='butcher_start' ordinal='3' />
+            <column datatype='string' name='winner' ordinal='4' />
+            <column datatype='integer' name='turns' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sim_results.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[sim_results.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>board_size</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[board_size]</local-name>
+            <parent-name>[sim_results.csv]</parent-name>
+            <remote-alias>board_size</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>swine_start</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[swine_start]</local-name>
+            <parent-name>[sim_results.csv]</parent-name>
+            <remote-alias>swine_start</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>butcher_start</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[butcher_start]</local-name>
+            <parent-name>[sim_results.csv]</parent-name>
+            <remote-alias>butcher_start</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[sim_results.csv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>turns</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[turns]</local-name>
+            <parent-name>[sim_results.csv]</parent-name>
+            <remote-alias>turns</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[board_size]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[butcher_start]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[swine_start]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[turns]' role='measure' type='quantitative' />
+      <column datatype='string' name='[winner]' role='dimension' type='nominal' />
+      <column-instance column='[winner]' derivation='Count' name='[cnt:winner:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[winner]' derivation='CountD' name='[ctd:winner:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+      <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[board_size]' derivation='Sum' name='[sum:board_size:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[butcher_start]' derivation='Sum' name='[sum:butcher_start:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[swine_start]' derivation='Sum' name='[sum:swine_start:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[turns]' derivation='Sum' name='[sum:turns:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:winner:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;butcher&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;swine&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[cnt:winner:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[sum:board_size:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[sum:swine_start:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[sum:F1:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[sum:butcher_start:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[sum:turns:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[ctd:winner:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Netherlands&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sim_results (2)' name='federated.1pvb6o80f92uzk13axt2f1xdoknv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvb6o80f92uzk13axt2f1xdoknv'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[board_size]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[butcher_start]' role='dimension' type='ordinal' />
+            <column-instance column='[board_size]' derivation='None' name='[none:board_size:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[butcher_start]' derivation='None' name='[none:butcher_start:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[swine_start]' derivation='None' name='[none:swine_start:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[turns]' derivation='Sum' name='[sum:turns:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[swine_start]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[turns]' role='measure' type='quantitative' />
+            <column datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[sum:Number of Records:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1pvb6o80f92uzk13axt2f1xdoknv].[sum:turns:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:board_size:ok]'>
+            <groupfilter function='member' level='[none:board_size:ok]' member='12' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:butcher_start:ok]'>
+            <groupfilter function='member' level='[none:butcher_start:ok]' member='7' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:swine_start:ok]'>
+            <groupfilter function='member' level='[none:swine_start:ok]' member='11' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:board_size:ok]</column>
+            <column>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:butcher_start:ok]</column>
+            <column>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:swine_start:ok]</column>
+            <column>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[:Measure Names]' value='136' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>(([federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:winner:nk] / [federated.1pvb6o80f92uzk13axt2f1xdoknv].[:Measure Names]) * [federated.1pvb6o80f92uzk13axt2f1xdoknv].[Multiple Values])</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='335'>
+            <card mode='slider' param='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:swine_start:ok]' type='filter' />
+            <card mode='slider' param='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:butcher_start:ok]' type='filter' />
+            <card mode='slider' param='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:board_size:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1pvb6o80f92uzk13axt2f1xdoknv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[:Measure Names]</field>
+            <field>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[cnt:winner:qk]</field>
+            <field>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:board_size:ok]</field>
+            <field>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:board_size:qk]</field>
+            <field>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:butcher_start:ok]</field>
+            <field>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:butcher_start:qk]</field>
+            <field>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:swine_start:ok]</field>
+            <field>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:swine_start:qk]</field>
+            <field>[federated.1pvb6o80f92uzk13axt2f1xdoknv].[none:winner:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAYaklEQVR4nO3daXAc553f8W93zz2YAzO4AQIEQOIgSJAgDpIixUMUJVGyFFuS15Id17q8
+      G282+yLJJqndLVelXKrkRcpJubYqsZzKJrXe3Wh1OOtDsiXRIsX7EgleIAkeIC7ivjEA5u7O
+      C5AUIVImaNzo/6dKJaJnevqPQf/mefrp7nkUwzAMhDAhRVEUdaGLEGIhSQCEqUkAhKlJAISp
+      SQCEqUkAhKlJAISpSQCEqUkAhKlJAISpSQCEqUkAhKlJAISpSQCEqUkAhKlJAISpSQCEqVke
+      trC9vZ14PD7ftYhlLhwO43Q6F7qMKRS5JVLMB8MwaGlpobCwcKFLuUduiRSm99AukBCPwzAM
+      bl8+xqkLTYxEDTKLq9j5xDrcVhVloYt7BAmAmAU6cc3LU199nVSHQeOpfRw84ea57asW/Q62
+      2OsTS4CiaBSVV2IYBnoiisvjxTGuYeg60TuDKYZhkEwmCYfDU9b92dUGQrHovNW6KXcFa9Iy
+      7v0sARCzIj7aw2f19XT3h7CnFrFt+0qsqgJ2OzAZAE3THhgF6gyNMhiemLc612fnTKlBDoLF
+      rNCcPkrKN7BhXTn2cDvXWwfRl8D4ogRAzArV6iAtM5ui0nVsqiunu/EKEX2hq3o06QKJGTP0
+      Pg7/5iKegmxcFoPeths4s9ZjWwIfrxIAMXNKkPJ1ubR2DdCfVEgtrKGkOA/LYh8DRQIgZoGi
+      qGQUlJFRsNCVPL4l0EgJMXckAMLUJADC1CQAwtQkAMLUJADC1CQAwtQkAMLUJADC1CQAwtQk
+      AMLUJADC1CQAwtQkAMLUJADC1CQAwtQkAMLUJADC1CQAwtQkAMLUJADC1CQAwtQkAMLUJADC
+      1CQAwtTkm+HEjBlGkttXz3C5uRfDkc7GuioyPfaFLmtapAUQMzbQeIyL/TYqNtZRnhnnwP56
+      Igtd1DRJCyBmzFNYx/Pljsn5wDJ0Ltc3MAY4Friu6ZAAiBmzOxyAQSzUx7lTZ0mp2kCAyVlh
+      dH1ykoC7/04kElPWNZjfWTS+WIMEQMycYTDee5MDRy6SvqaWTSU5qIDB5I7PQ/7/+brzXuqU
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
