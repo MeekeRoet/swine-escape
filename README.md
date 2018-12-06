@@ -9,7 +9,7 @@
 
 
 ## Introduction
-This repository contains code for a mathematical brainteaser/programming challenge that was presented to me during a job application procedure.
+This repository contains code for a mathematical brainteaser/programming challenge that I encountered.
 
 
 ## Game instructions
