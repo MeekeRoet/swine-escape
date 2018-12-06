@@ -26,9 +26,11 @@ Your assignment is to create a mathematical or statistical model to find these p
 
 ## Illustration of gameplay
 
+The below GIF demonstrates the gameplay when the butcher (grey) starts at square 1, the swine (pink) starts at square 7, and the board is 20 squares long. The code used to generate the animation can be found in [swine-escape-simulation.ipynb](../master/swine-escape-simulation.ipynb) under Animation.
+
 ![Output sample](https://github.com/MeekeRoet/swine-escape/blob/master/swine-escape.gif)
 
 
 ## Organization of the repository
 
-I tackled the questions with 2 different approaches: by simulation (approximate) and using a Markov chain (exact).
+I tackled the questions using two different approaches: a [Markov chain](../master/swine-escape-markov.ipynb) (exact) and by [simulation](../master/swine-escape-simulation.ipynb) (approximate). Furthermore, the simulation results were processed into a [Tableau dashboard](https://public.tableau.com/profile/meeke.roet#!/vizhome/Dashboardswineescape/Swineescapedashboard) showing the winning probabilities and length of the game for various combinations of starting positions and board length.
