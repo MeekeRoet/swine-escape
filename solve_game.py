@@ -1,25 +1,37 @@
-import sys
+import argparse
 from game_class import SwineEscape
 
-# If no arguments are given, use the default game setup.
-if len(sys.argv) == 1:
-    board_size = 12
-    swine_start = 7
-    butcher_start = 1
-else:
-    try:
-        board_size = int(sys.argv[1])
-        swine_start = int(sys.argv[2])
-        butcher_start = int(sys.argv[3])
-    except ValueError:
-        print('Error: game setup should be expressed as 3 integer numbers indicating board size, swine start, and butcher start.')
-        sys.exit()
 
-game = SwineEscape(board_size=board_size, swine_start=swine_start, butcher_start=butcher_start)
+parser = argparse.ArgumentParser(description = "Solve the swine escape game.")
+parser.add_argument("-l", "--boardlength",
+                    help = "Custom board length",
+                    required=False,
+                    default=12,
+                    type=int)
+parser.add_argument("-s", "--swinestart",
+                    help = "Custom swine starting position",
+                    required=False,
+                    default=7,
+                    type=int)
+parser.add_argument("-b", "--butcherstart",
+                    help = "Custom butcher starting position",
+                    required=False,
+                    default=1,
+                    type=int)
+parser.add_argument("-m", "--method",
+                    help = "Solution method (either 'dp' or 'markov'). Default: dp",
+                    required=False,
+                    default='dp',
+                    type=str)
+argument = parser.parse_args()
+
+print('\nSolving game using {}.'.format(argument.method))
+game = SwineEscape(board_size=argument.boardlength,
+                   swine_start=argument.swinestart,
+                   butcher_start=argument.butcherstart)
 print('\nBoard length: {}\nSwine start: {}\nButcher start: {}'.format(game.board_size,
                                                                       game.swine_start,
                                                                       game.butcher_start))
-game.solve_game('dp')
-print('Winning probability (DP): {:.1f}%'.format(game.winning_prob*100))
-game.solve_game('markov')
-print('Winning probability (Markov chain): {:.1f}%'.format(game.winning_prob*100))
+
+game.solve_game(argument.method)
+print("Swine's chance of winning: {:.1f}%".format(game.winning_prob*100))
