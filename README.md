@@ -25,13 +25,13 @@ Your assignment is to create a mathematical or statistical model to find these p
 * Can you say something about how long the game takes (also under different initial conditions)?
 
 
-## Organization of the repository
+## Solution
 
 I tackled the questions using three different approaches: a [Markov chain](../master/markov.ipynb) and a [dynamic programme](../master/dp.ipynb) (DP), both exact, and by [simulation](../master/simulation.ipynb), an approximation. 
 
 The Markov and DP solvers can be called from the command line using ``python solve_game.py``, optionally providing board length (``-l``), swine starting position (``-s``), butcher starting position (``-b``), and solution method (``-m``) as arguments to run a different game/solver than the default. For instance, ``python solve_game.py -l 12 -s 7 -b 1 -m dp`` will solve the default game using DP.
 
-Furthermore, the simulation results were processed into a [Tableau dashboard](https://public.tableau.com/profile/meeke.roet#!/vizhome/Dashboardswineescape/Swineescapedashboard) showing the winning probabilities and length of the game for various combinations of starting positions and board length.
+Furthermore, the simulation results were processed into a [Tableau dashboard](https://public.tableau.com/profile/meeke.roet#!/vizhome/Dashboardswineescape/Swineescapedashboard) showing the approximated winning probabilities and length of the game for various combinations of starting positions and board length.
 
 
 
