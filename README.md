@@ -27,7 +27,9 @@ Your assignment is to create a mathematical or statistical model to find these p
 
 ## Organization of the repository
 
-I tackled the questions using two different approaches: a [Markov chain](../master/swine-escape-markov.ipynb) (exact) and by [simulation](../master/swine-escape-simulation.ipynb) (approximate). Furthermore, the simulation results were processed into a [Tableau dashboard](https://public.tableau.com/profile/meeke.roet#!/vizhome/Dashboardswineescape/Swineescapedashboard) showing the winning probabilities and length of the game for various combinations of starting positions and board length.
+I tackled the questions using three different approaches: a [Markov chain](../master/markov.ipynb), a [dynamic programme](../master/dp.ipynb) (DP) (exact), and by [simulation](../master/simulation.ipynb) (approximate). Furthermore, the simulation results were processed into a [Tableau dashboard](https://public.tableau.com/profile/meeke.roet#!/vizhome/Dashboardswineescape/Swineescapedashboard) showing the winning probabilities and length of the game for various combinations of starting positions and board length.
+
+Besides the notebooks, the Markov and DP solutions can be called by ``python solve_game.py``, optionally providing board length, swine starting position, and butcher starting position as arguments to run a different game than the default.
 
 
 ## Illustration of gameplay
