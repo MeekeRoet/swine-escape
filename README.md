@@ -4,7 +4,7 @@
 ## Table of contents
   * [Introduction](#introduction)
   * [Game instructions](#game-instructions)
-  * [Organization of the repository](#organization-of-the-repository)
+  * [Solution](#solution)
   * [Illustration of gameplay](#illustration-of-gameplay)
 
 
