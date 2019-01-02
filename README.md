@@ -1,18 +1,14 @@
 # Swine escape
 
 
-## Table of contents
-  * [Introduction](#introduction)
+### Table of contents
   * [Game instructions](#game-instructions)
   * [Solution](#solution)
   * [Illustration of gameplay](#illustration-of-gameplay)
 
 
-## Introduction
-This repository contains code for a mathematical brainteaser/programming challenge that I encountered.
 
-
-## Game instructions
+### Game instructions
 Consider the following board game: A game board has 12 spaces. The swine senses the Christmas spirit and manages to run away from home couple of weeks beforehand. Fortunately for it, the butcher is a bit of a drunkard and easily distracted. The swine starts on space 7, and the butcher on space 1. On each game turn a 6-sided die is rolled. On an outcome from 1 to 3, the swine moves that many spaces forward. On an outcome of 5 or 6, the butcher moves that many spaces forward. On the outcome 4, both advance one space. The swine wins if it reaches the river, located at space 12. The final roll does not have to be exact, moving past space 12 is OK. The butcher wins if he catches up with the swine (or moves past it).
 
 
@@ -25,7 +21,7 @@ Your assignment is to create a mathematical or statistical model to find these p
 * Can you say something about how long the game takes (also under different initial conditions)?
 
 
-## Solution
+### Solution
 
 I tackled the questions using three different approaches: a [Markov chain](../master/markov.ipynb) and a [dynamic programme](../master/dp.ipynb) (DP), both exact, and by [simulation](../master/simulation.ipynb), an approximation. 
 
@@ -36,7 +32,7 @@ Furthermore, the simulation results were processed into a [Tableau dashboard](ht
 
 
 
-## Illustration of gameplay
+### Illustration of gameplay
 
 The below GIF demonstrates the gameplay when the butcher (grey) starts at square 1, the swine (pink) starts at square 7, and the board is 20 squares long. The code used to generate the animation can be found in [swine-escape-simulation.ipynb](../master/swine-escape-simulation.ipynb) under Animation.
 
