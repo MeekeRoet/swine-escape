@@ -23,7 +23,7 @@ Your assignment is to create a mathematical or statistical model to find these p
 
 ### Solution
 
-I tackled the questions using three different approaches: a [Markov chain](../master/markov.ipynb) and a [dynamic programme](../master/dp.ipynb) (DP), both exact, and by [simulation](../master/simulation.ipynb), an approximation. 
+The questions were tackled using three different approaches: a [Markov chain](../master/markov.ipynb) and a [dynamic programme](../master/dp.ipynb) (DP), both exact, and by [simulation](../master/simulation.ipynb), an approximation. 
 
 The Markov and DP solvers can be called from the command line using ``python solve_game.py``, optionally providing board length (``-l``), swine starting position (``-s``), butcher starting position (``-b``), and solution method (``-m``) as arguments to run a different game/solver than the default. For instance, ``python solve_game.py -l 12 -s 7 -b 1 -m dp`` will solve the default game using DP.
 
